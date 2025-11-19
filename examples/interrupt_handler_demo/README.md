@@ -70,7 +70,7 @@ These are added without overwriting user-provided or env-based ignored lists.
 
 pytest Verification
 Command:
-pytest examples/interrupt_handler_demo/tests -q
+**pytest examples/interrupt_handler_demo/tests -q**
 
 All 4 tests pass:
 -> filler ignored
@@ -85,6 +85,7 @@ All 4 tests pass:
 ⚠️ **3. Known Issues / Edge Cases**
 
 Issue Description :
+
 -> No public API validation : Since this is a demo agent, no actual LiveKit server is used
 
 -> Complex multilingual grammar : Only handles simple Hindi fillers, not full grammar
@@ -95,7 +96,7 @@ Issue Description :
 
 🧪 **4. Steps to Test** :
 
-A. Create Virtual Environment
+A. Create Virtual Environment : 
 python -m venv .venv
 .venv\Scripts\activate
 
@@ -104,13 +105,12 @@ Inside agents/examples/interrupt_handler_demo/:
 
 ->pip install aiohttp
 
-(Tests also require pytest):
 ->pip install pytest
 
 ->pip install pytest-asyncio
 
 C. Run Demo
-From: 
+From : 
 C:\Users\<your-username>\agents\examples\interrupt_handler_demo>
 
 Run:
@@ -162,23 +162,24 @@ pytest examples/interrupt_handler_demo/tests -q
 
 
 📁 7. Repository Structure After Changes
+
 agents/
 
 ├── examples/
 
-│   └── interrupt_handler_demo/
+   │   └── interrupt_handler_demo/
 
-│       ├── interrupt_handler.py   ← NEW / UPDATED
+   │       ├── interrupt_handler.py   ← NEW / UPDATED
 
-│       ├── main.py                ← NEW DEMO
+   │       ├── main.py                ← NEW DEMO
 
-│       ├── README.md              ← THIS FILE
+   │       ├── README.md              ← THIS FILE
 
-│       └── tests/
+   │       └── tests/
 
-│           ├── test_basic.py
+   │           ├── test_basic.py
 
-│           └── ...
+   │           └── ...
 
 
 
