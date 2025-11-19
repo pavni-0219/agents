@@ -1,4 +1,4 @@
-🎧 # **LiveKit Interrupt Handler** ## Filler Filtering + Smart Interrupts (Hindi + English)
+🎧  **LiveKit Interrupt Handler** Filler Filtering + Smart Interrupts (Hindi + English)
  
 This project extends the LiveKit Agents event loop with a custom InterruptHandler, enabling intelligent interruption handling for real-time conversational agents.
 The handler filters filler words, listens for stop commands, ignores low-confidence ASR noise, and supports Hindi + English mixed speech — all without modifying any LiveKit core SDK code.
@@ -83,11 +83,15 @@ All 4 tests pass:
 
 
 ⚠️ **3. Known Issues / Edge Cases**
+
 Issue Description :
-No public API validation : Since this is a demo agent, no actual LiveKit server is used
-Complex multilingual grammar : Only handles simple Hindi fillers, not full grammar
-Mixed-token tricky phrases :Example: “haan stop” works, but “stoooop” needs normalization rules
-HTTP config server optional : Only starts if aiohttp installed
+-> No public API validation : Since this is a demo agent, no actual LiveKit server is used
+
+-> Complex multilingual grammar : Only handles simple Hindi fillers, not full grammar
+
+-> Mixed-token tricky phrases :Example: “haan stop” works, but “stoooop” needs normalization rules
+
+-> HTTP config server optional : Only starts if aiohttp installed
 
 🧪 **4. Steps to Test** :
 
@@ -124,12 +128,16 @@ You will see output like:
 <img width="1024" height="808" alt="Screenshot 2025-11-19 003958" src="https://github.com/user-attachments/assets/5568d6c1-dcec-4c86-acea-f6b4c5b1b943" />
 
 
+
+
 D. Run Automated Tests
 From the project root:
 pytest examples/interrupt_handler_demo/tests -q
 
 
+
 <img width="712" height="81" alt="Screenshot 2025-11-19 004731" src="https://github.com/user-attachments/assets/dc8bebdf-625e-4cbf-b082-cc01e641f316" />
+
 
 
 
@@ -155,13 +163,21 @@ pytest examples/interrupt_handler_demo/tests -q
 
 📁 7. Repository Structure After Changes
 agents/
+
 ├── examples/
+
 │   └── interrupt_handler_demo/
+
 │       ├── interrupt_handler.py   ← NEW / UPDATED
+
 │       ├── main.py                ← NEW DEMO
+
 │       ├── README.md              ← THIS FILE
+
 │       └── tests/
+
 │           ├── test_basic.py
+
 │           └── ...
 
 
