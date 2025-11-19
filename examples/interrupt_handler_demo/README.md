@@ -68,11 +68,12 @@ These are added without overwriting user-provided or env-based ignored lists.
     Confidence < 0.6 while agent is speaking
 
 
-pytest Verification
+# pytest Verification
 Command:
 **pytest examples/interrupt_handler_demo/tests -q**
 
 All 4 tests pass:
+
 -> filler ignored
 
 -> stop keyword triggers pause
@@ -94,11 +95,12 @@ Issue Description :
 
 -> HTTP config server optional : Only starts if aiohttp installed
 
+
 🧪 **4. Steps to Test** :
 
 A. Create Virtual Environment : 
-python -m venv .venv
-.venv\Scripts\activate
+**python -m venv .venv
+.venv\Scripts\activate**
 
 B. Install Dependencies
 Inside agents/examples/interrupt_handler_demo/:
@@ -114,7 +116,7 @@ From :
 C:\Users\<your-username>\agents\examples\interrupt_handler_demo>
 
 Run:
-python main.py
+**python main.py**
 
 You will see output like:
 
@@ -141,6 +143,7 @@ pytest examples/interrupt_handler_demo/tests -q
 
 
 
+
  🧩 5. How the Logic Works (Real World Scenarios)
 
 | **User Speech**                          | **Agent Speaking?** | **Expected Behavior**                       | **Implemented?** |
@@ -152,6 +155,7 @@ pytest examples/interrupt_handler_demo/tests -q
 | “hmm yeah” (confidence < threshold)      | YES                  | Ignore noise                                 | ✅               |
 
 
+
  🖥️ 6. Environment Details
 |  Component       |  Version                                      |
 | ---------------- | --------------------------------------------- |
@@ -161,11 +165,12 @@ pytest examples/interrupt_handler_demo/tests -q
 | **Runtime**      | Asyncio event loop                            |
 
 
+
 📁 7. Repository Structure After Changes
 
 agents/
 
-├── examples/
+ ├── examples/
 
    │   └── interrupt_handler_demo/
 
