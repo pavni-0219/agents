@@ -51,7 +51,9 @@ Extended filler list includes:
 These are added without overwriting user-provided or env-based ignored lists.
 
 ✔️ **2. What Works** (Verified Manually + via pytest)                                                                                                                  
-     Manually Verified Through main.py Demo :                                                                                                                       
+     Manually Verified Through main.py Demo :  
+
+     
 -> Agent ignores fillers when speaking:
    “uh”, “hmm”, “umm”
 
@@ -103,7 +105,7 @@ A. Create Virtual Environment :
 .venv\Scripts\activate**
 
 B. Install Dependencies
-Inside agents/examples/interrupt_handler_demo/:
+Inside:  agents/examples/interrupt_handler_demo/:
 
 ->pip install aiohttp
 
