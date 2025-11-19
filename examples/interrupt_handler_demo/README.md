@@ -1,4 +1,4 @@
-🎧  **LiveKit Interrupt Handler** Filler Filtering + Smart Interrupts (Hindi + English)
+🎧 **LiveKit Interrupt Handler Filler** Filtering + Smart Interrupts (Hindi + English)
  
 This project extends the LiveKit Agents event loop with a custom InterruptHandler, enabling intelligent interruption handling for real-time conversational agents.
 The handler filters filler words, listens for stop commands, ignores low-confidence ASR noise, and supports Hindi + English mixed speech — all without modifying any LiveKit core SDK code.
@@ -68,7 +68,7 @@ These are added without overwriting user-provided or env-based ignored lists.
     Confidence < 0.6 while agent is speaking
 
 
-# pytest Verification
+pytest Verification
 Command:
 **pytest examples/interrupt_handler_demo/tests -q**
 
